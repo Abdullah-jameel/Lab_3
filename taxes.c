@@ -27,31 +27,31 @@ int main(int argc, char **argv) {
   }
   else if (agi >= 19901 && agi <= 81050)
   {
-    tax = 1990 + (agi * 12.0 /100);
+    tax = 1990 + ((agi - 19900) * 12.0 /100);
   }
   else if (agi >= 81051 && agi <= 172750)
   {
-    tax = 9328 + (agi * 22.0 / 100);
+    tax = 9328 + ((agi - 81050) * 22.0 / 100);
   }
   
   else if (agi >= 172551 && agi <= 329850)
   {
-    tax = 29502 + (agi * 24.0 / 100);
+    tax = 29502 + ((agi - 172550) * 24.0 / 100);
   }
 
   else if (agi >= 329851 && agi <= 418850)
   {
-    tax = 67206 + (agi * 32.0 / 100);
+    tax = 67206 + ((agi - 329850) * 32.0 / 100);
   }
 
   else if (agi >= 418851 && agi <= 628300 )
   {
-    tax = 95686 + (agi * 35.0 / 100);
+    tax = 95686 + ((agi - 418850) * 35.0 / 100);
   }
   
   else if (agi >= 628301 )
   {
-    tax = 168933.50 + (agi * 37.0 / 100);
+    tax = 168933.50 + ((agi - 628300) * 37.0 / 100);
   } 
 
   printf("Do you have any children? (Y) or (N)? ");
