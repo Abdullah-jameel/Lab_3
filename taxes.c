@@ -3,6 +3,7 @@
  * gross income and a child tax credit.
  *
  */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -17,8 +18,16 @@ int main(int argc, char **argv) {
 
   printf("Please enter your adjusted gross income (AGI): ");
   scanf("%lf", &agi);
-  //remove the "enter" endline character
-  getchar(); 
+  
+  if (agi>0 && agi >=19900 )
+  {
+      tax = agi * 10 /100;
+  }
+  else if (agi >= 19901 && agi <= 81050)
+  {
+    tax = 1990 + (agi * 12 /100);
+  }
+  
 
   printf("Do you have any children? (Y) or (N)? ");
   c = getchar();
