@@ -62,6 +62,11 @@ int main(int argc, char **argv) {
     scanf("%d", &numChildren);
   }
   
+  else if(c == 'n' || c == 'N') 
+  {
+    printf("You hve no children ");
+  }
+
   childCredit = numChildren * 2000;
 
   totalTax = tax - childCredit;
