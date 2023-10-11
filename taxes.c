@@ -18,40 +18,41 @@ int main(int argc, char **argv) {
 
   printf("Please enter your adjusted gross income (AGI): ");
   scanf("%lf", &agi);
+  //remove the "enter" endline character
+  getchar(); 
   
-  if (agi>0 && agi >=19900 )
+  if (agi>0 && agi <=19900 )
   {
-      tax = agi * 10 /100;
+      tax = agi * 10.0 /100;
   }
   else if (agi >= 19901 && agi <= 81050)
   {
-    tax = 1990 + (agi * 12 /100);
+    tax = 1990 + (agi * 12.0 /100);
   }
-  else if (agi >= 81051 && agi >= 172750)
+  else if (agi >= 81051 && agi <= 172750)
   {
-    tax = 9328 + (agi * 22 / 100);
+    tax = 9328 + (agi * 22.0 / 100);
   }
   
-  else if (agi >= 172551 && agi = 329850)
+  else if (agi >= 172551 && agi <= 329850)
   {
-    tax = 29502 + (agi * 24 / 100);
+    tax = 29502 + (agi * 24.0 / 100);
   }
 
   else if (agi >= 329851 && agi <= 418850)
   {
-    tax = 67206 + (agi * 32 / 100);
+    tax = 67206 + (agi * 32.0 / 100);
   }
 
   else if (agi >= 418851 && agi <= 628300 )
   {
-    tax = 95686 + (agi * 35 / 100);
+    tax = 95686 + (agi * 35.0 / 100);
   }
   
   else if (agi >= 628301 )
   {
-    tax = 168933.50 + (agi * 37 / 100);
+    tax = 168933.50 + (agi * 37.0 / 100);
   } 
-
 
   printf("Do you have any children? (Y) or (N)? ");
   c = getchar();
