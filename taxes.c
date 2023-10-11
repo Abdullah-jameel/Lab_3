@@ -61,7 +61,10 @@ int main(int argc, char **argv) {
     printf("How many children do you have? ");
     scanf("%d", &numChildren);
   }
+  
+  childCredit = numChildren * 2000;
 
+  totalTax = tax - childCredit;
   //TODO: compute the tax, child credit, and total tax here
 
   printf("AGI:          $%10.2f\n", agi);
