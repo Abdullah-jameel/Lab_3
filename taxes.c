@@ -42,7 +42,12 @@ int main(int argc, char **argv) {
     tax = 67206 + (agi * 32 / 100);
   }
 
- 
+  else if (agi >= 418851 && agi <= 628300 )
+  {
+    tax = 95686 + (agi * 35 / 100);
+  }
+  
+
 
 
   printf("Do you have any children? (Y) or (N)? ");
