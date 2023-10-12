@@ -40,10 +40,22 @@ int main(int argc, char **argv) {
     result = a * b;
     printf("%f", result);
   } else if(choice == 4) {
+    if (b = 0)
+    {
+      printf("error");
+    }
+    else
+    {
     result = a / b;
     printf("%f", result);
+    }
   } else if(choice == 5) {
-    //TODO: handle this case (minimum)
+    if (a<b)
+    {
+      printf("a is smaller");
+    }
+    else
+      printf("b is smaller");  
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
