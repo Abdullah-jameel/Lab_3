@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
     printf("You hve no children ");
   }
 
-  childCredit = numChildren * 2000;
+  childCredit = numChildren * 2000
 
   totalTax = tax - childCredit;
   //TODO: compute the tax, child credit, and total tax here
