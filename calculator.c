@@ -13,7 +13,7 @@
 
 int main(int argc, char **argv) {
 
-  double a, b, result;
+  double a, b, result, log_a{(b)};
   int choice;
 
   printf("Enter operand a: ");
@@ -57,7 +57,8 @@ int main(int argc, char **argv) {
     else
       printf("b is smaller");  
   } else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
+    log_a{(b)} = \frac{\ln{(b)}}{\ln{(a)}};
+    printf("%f",log_a{(b)});
   } else {
     printf("Please input a valid operator next time");
   }
