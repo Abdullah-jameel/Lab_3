@@ -11,9 +11,10 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 
-  double a, b, result, log_a{(b)};
+  double a, b, result;
   int choice;
 
   printf("Enter operand a: ");
@@ -31,35 +32,48 @@ int main(int argc, char **argv) {
   printf("(6) log_a(b)\n");
   scanf("%d", &choice);
 
-  if(choice == 1) {
+  if (choice == 1)
+  {
     printf("%f", a + b);
-  } else if(choice == 2) {
+  }
+  else if (choice == 2)
+  {
     result = a - b;
     printf("%f", result);
-  } else if(choice == 3) {
+  }
+  else if (choice == 3)
+  {
     result = a * b;
     printf("%f", result);
-  } else if(choice == 4) {
+  }
+  else if (choice == 4)
+  {
     if (b = 0)
     {
       printf("error");
     }
     else
     {
-    result = a / b;
-    printf("%f", result);
+      result = a / b;
+      printf("%f", result);
     }
-  } else if(choice == 5) {
-    if (a<b)
+  }
+  else if (choice == 5)
+  {
+    if (a < b)
     {
       printf("a is smaller");
     }
     else
-      printf("b is smaller");  
-  } else if(choice == 6) {
-    log_a{(b)} = \frac{\ln{(b)}}{\ln{(a)}};
-    printf("%f",log_a{(b)});
-  } else {
+      printf("b is smaller");
+  }
+  else if (choice == 6)
+  {
+    result = loga / logb;
+    printf("%f", result);
+  }
+  else
+  {
     printf("Please input a valid operator next time");
   }
 
