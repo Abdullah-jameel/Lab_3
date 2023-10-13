@@ -23,6 +23,8 @@ int main(int argc, char **argv)
   printf("Enter operand b: ");
   scanf("%lf", &b);
 
+if (a >= 0 && b >= 0);
+{
   printf("Enter operation:\n");
   printf("(1) Addition\n");
   printf("(2) Subtraction\n");
@@ -76,6 +78,10 @@ int main(int argc, char **argv)
   {
     printf("Please input a valid operator next time");
   }
-
+}
+else
+{
+  printf("Input is inapropriate")
+}
   return 0;
 }
