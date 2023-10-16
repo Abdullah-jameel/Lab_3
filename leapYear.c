@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
 
   year = 2000;
   printf("Test Case 1: year = %d: ", year);
-  if(!isLeapYear(year)) {
+  if(!isLeapYear(year % 4 = 0 && year % 100 =0 && year % 400 =0)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
   } else {

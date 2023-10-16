@@ -23,8 +23,9 @@ int main(int argc, char **argv)
   printf("Enter operand b: ");
   scanf("%lf", &b);
 
-if (a >= 0 && b >= 0);
+if (a >= 0 && b >= 0)
 {
+
   printf("Enter operation:\n");
   printf("(1) Addition\n");
   printf("(2) Subtraction\n");
@@ -71,7 +72,7 @@ if (a >= 0 && b >= 0);
   }
   else if (choice == 6)
   {
-    result = loga / logb;
+    result = log(a) / log(b);
     printf("%f", result);
   }
   else
@@ -81,7 +82,7 @@ if (a >= 0 && b >= 0);
 }
 else
 {
-  printf("Input is inapropriate")
+  printf("Input is inappropriate");
 }
   return 0;
 }
